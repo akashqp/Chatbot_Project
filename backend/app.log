@@ -1,0 +1,1140 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:38:44] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:Login request for sky
+INFO:root:Password: b'password'
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:38:44] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:40:51] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:Login request for sky
+INFO:root:Password: b'password'
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:40:51] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:41:07] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:Login request for sky
+INFO:root:Password: b'password'
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:41:08] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:41:25] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:Login request for sky
+INFO:root:Password: b'password'
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 14:41:25] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 17:04:29] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 17:04:29] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 19:55:27] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 19:55:27] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 19:55:52] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 19:55:53] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 19:59:10] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 19:59:10] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 21:59:54] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 21:59:55] "POST /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 21:59:58] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:05:16] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:05:16] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:05:40] "OPTIONS /chatbot HTTP/1.1" 200 -
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 74, in chatbot
+    data = request.json
+               ^^^^^^
+NameError: name 'openai' is not defined
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:05:40] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:16:16] "OPTIONS /chatbot HTTP/1.1" 200 -
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 74, in chatbot
+    data = request.json
+               ^^^^^^
+NameError: name 'openai' is not defined
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:16:16] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:26:27] "OPTIONS /chatbot HTTP/1.1" 200 -
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 74, in chatbot
+    logging.info('Chatbot API called')
+               ^^^^^^
+NameError: name 'openai' is not defined
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:26:27] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:27:04] "OPTIONS /chatbot HTTP/1.1" 200 -
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 74, in chatbot
+    logging.info('Chatbot API called')
+               ^^^^^^
+NameError: name 'openai' is not defined
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:27:04] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:34:02] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:34:02] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:34:32] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    response = openai.Completion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:34:32] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:38:58] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    model="gpt-3.5-turbo",
+               ^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:38:58] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:49:17] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:49:17] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:49:26] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    response = openai.ChatCompletion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:49:26] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:55:02] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    response = openai.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:55:02] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:56:25] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:56:26] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:56:33] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    response = openai.Completion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:56:33] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:58:57] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    data = request.json
+               ^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 22:58:57] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:00:27] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    data = request.json
+               ^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:00:27] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:10:33] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    data = request.json
+               ^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:10:33] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:12:37] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 79, in chatbot
+    response = openai.ChatCompletion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:12:37] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:14:19] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:14:19] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:14:25] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 80, in chatbot
+    response = openai.ChatCompletion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2024 23:14:25] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:00:48] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:00:49] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:01:03] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 80, in chatbot
+    response = openai.ChatCompletion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:01:03] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:01:44] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 80, in chatbot
+    response = openai.ChatCompletion.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/lib/_old_api.py", line 39, in __call__
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:01:44] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:02:12] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:02:12] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:02:20] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 59, in __getattr__
+    return self[k]
+           ~~~~^^^
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 88, in chatbot
+    chatbot_response = response.choices[0].text.strip()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 61, in __getattr__
+    raise AttributeError(*err.args)
+AttributeError: text
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:02:21] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:09:12] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 59, in __getattr__
+    return self[k]
+           ~~~~^^^
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 88, in chatbot
+    chatbot_response = response.choices[0].text.strip()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 61, in __getattr__
+    raise AttributeError(*err.args)
+AttributeError: text
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:09:13] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+
+
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:10:03] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 59, in __getattr__
+    return self[k]
+           ~~~~^^^
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 88, in chatbot
+    chatbot_response = response.choices[0].text.strip()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 61, in __getattr__
+    raise AttributeError(*err.args)
+AttributeError: text
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:10:04] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:10:15] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 59, in __getattr__
+    return self[k]
+           ~~~~^^^
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 88, in chatbot
+    chatbot_response = response.choices[0].text.strip()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 61, in __getattr__
+    raise AttributeError(*err.args)
+AttributeError: text
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:10:16] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:14:45] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 59, in __getattr__
+    return self[k]
+           ~~~~^^^
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 88, in chatbot
+    chatbot_response = response['choices'][0]['message']['content']
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 61, in __getattr__
+    raise AttributeError(*err.args)
+AttributeError: text
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:14:46] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:root:Chatbot API called
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 59, in __getattr__
+    return self[k]
+           ~~~~^^^
+KeyError: 'text'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 88, in chatbot
+    chatbot_response = response['choices'][0]['message']['content']
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/openai/openai_object.py", line 61, in __getattr__
+    raise AttributeError(*err.args)
+AttributeError: text
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:14:49] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:15:46] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:15:46] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:16:10] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AkjrBlmC5yoWaNmuwMT2O3Y1Vb8p",
+  "object": "chat.completion",
+  "created": 1712349971,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello! I'm here and ready to assist you. How can I help you today?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 18,
+    "total_tokens": 39
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+ERROR:app:Exception on /chatbot [POST]
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: chat_history
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/backend/app.py", line 93, in chatbot
+    db.session.commit()
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4296, in flush
+    self._flush(objects)
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4392, in _flush
+    flush_context.execute()
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/akash/Programs/Project/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: chat_history
+[SQL: INSERT INTO chat_history (user_message, chatbot_response) VALUES (?, ?)]
+[parameters: ('Hello how are you', "Hello! I'm here and ready to assist you. How can I help you today?")]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:16:11] "[35m[1mPOST /chatbot HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:19:16] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AkmrtWzq3zHPBijbinHYDAdw1kAc",
+  "object": "chat.completion",
+  "created": 1712350157,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello! I'm just a virtual assistant, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 31,
+    "total_tokens": 52
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:19:18] "POST /chatbot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:20:45] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AkoI7iu2lsPrpdIxebd5IOwtB9wm",
+  "object": "chat.completion",
+  "created": 1712350246,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "That's great to hear! Flask is a popular web framework for building web applications using Python. Here are some steps to help you get started with creating an app using Flask:\n\n1. Install Flask: You can install Flask using pip by running the following command in your terminal:\n   ```\n   pip install flask\n   ```\n\n2. Create a new Flask project directory and navigate into it:\n   ```\n   mkdir my_flask_app\n   cd my_flask_app\n   ```\n\n3. Create a virtual environment (recommended) to manage dependencies for your project:\n   ```\n   python -m venv venv\n   source venv/bin/activate\n   ```\n\n4. Create a basic Flask app file (app.py) and define your routes:\n   \n   ```python\n   from flask import Flask\n\n   app = Flask(__name__)\n\n   @app.route('/')\n   def hello_world():\n       return 'Hello, World!'\n\n   if __name__ == '__main__':\n       app.run()\n   ```\n\n5. Run your Flask app by executing the following command in your terminal:\n   ```\n   python app.py\n   ```\n\n6. Open a web browser and go to http://127.0.0.1:5000/ to see your Flask app running.\n\nThese are just the basic steps to get you started with creating a Flask app. You can further customize your app by adding more routes, templates, static files, and database integrations based on your project requirements.\n\nIf you have any specific questions or need further assistance, feel free to ask!"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27,
+    "completion_tokens": 316,
+    "total_tokens": 343
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:20:50] "POST /chatbot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:21:51] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AkpLD2MEacc5l0dL0TAjmPua0k3c",
+  "object": "chat.completion",
+  "created": 1712350311,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "I'm sorry, but I don't have the ability to remember past interactions. Could you please provide me with more details so I can assist you better?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27,
+    "completion_tokens": 31,
+    "total_tokens": 58
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 02:21:52] "POST /chatbot HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 13:06:09] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 13:06:10] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:48:44] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:48:46] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:51:59] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:52:01] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:52:58] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AxUJuMrteVdQ5EgXjZVXpqj88hSy",
+  "object": "chat.completion",
+  "created": 1712398979,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello! How can I assist you today?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 9,
+    "total_tokens": 27
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:53:00] "POST /chatbot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:53:17] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AxUcpqDyyqTYYZLvDTGCtvOmYSu5",
+  "object": "chat.completion",
+  "created": 1712398998,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Of course! Summer is a wonderful time of year for many people. The warm weather, longer days, and opportunities for outdoor activities make it a popular season. What aspect of summer would you like to discuss or explore further?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 45,
+    "total_tokens": 68
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:53:19] "POST /chatbot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:53:49] "OPTIONS /chatbot HTTP/1.1" 200 -
+INFO:root:Chatbot API called
+INFO:root:{
+  "id": "chatcmpl-9AxV78VVsbxEMQZF5WOWmnMYCU9qv",
+  "object": "chat.completion",
+  "created": 1712399029,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The change of the season refers to the transition from one season to another, such as winter to spring, spring to summer, summer to fall, or fall to winter. During this time, we may experience shifts in temperature, weather patterns, and daylight hours as nature adapts to the new season. People may also adjust their clothing, activities, and routines to align with the changes that come with the shift in seasons. Is there anything specific you would like to know or discuss about the change of the season?"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 102,
+    "total_tokens": 124
+  },
+  "system_fingerprint": "fp_b28b39ffa8"
+}
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:53:50] "POST /chatbot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:55:42] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 15:55:43] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 16:52:55] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 16:52:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:16:27] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:16:28] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:16:35] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:16:37] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:17:03] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:17:04] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:18:49] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:18:50] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:19:05] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:19:07] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:19:28] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:19:29] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:22:32] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:22:33] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:22:41] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:22:42] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:23:03] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:23:05] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:23:14] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:23:15] "POST /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:23:19] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:24:22] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:24:23] "POST /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:24:28] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:28:35] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:28:36] "POST /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:28:39] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:29:50] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:True
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 17:29:51] "POST /login HTTP/1.1" 200 -
